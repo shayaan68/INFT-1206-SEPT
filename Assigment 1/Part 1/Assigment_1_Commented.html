@@ -8,17 +8,17 @@
 
 <!DOCTYPE html>
 
-<head><!--THe header tag is where the whole setup for the html file is located-->
-
 <html lang="en"> <!--This is for chossing the language -->
+<head><!--THe header tag is where the whole setup for the html file is located-->
 <link rel = "stylesheet", href="stylesheet.css"> <!-- This line Links the CSS (Cascading StyleSheet) through rel="stylesheet" and 
 href="stylesheet.css"(this is the location of the css file can be named differently)-->
 <meta name="author" content= "Dr Elanor Gaye"> <!-- the Meta tag handles metadata, this basically has a couple tags so you can breifly describe a website without going in to it, 
 in this case the author name-->
 
 <body>
-	<p class="sender-column">
-		<b>Dr. Eleanor Gaye</b><br />
+	<p class="sender-column"> <!-- class tag defines a styling class for the element block-->
+		<b>Dr. Eleanor Gaye</b><br /> <!-- <br /> is basically a new line element, it just exists as one block and creates a newline
+                                       <b> is a bolding element, it bolds whatever is within the element-->
 		Awesome Science faculty<br />
 		University of Awesome<br />
 		Bobtown, CA 99999,<br />
@@ -28,7 +28,8 @@ in this case the author name-->
 		<br />
 		20 January 2016<br />
 		</p>
-		<address>
+		<address> <!-- Address isnt a normal element, an element can have many names, some of them made up this is a case of that. I can make a element of name monkey, then
+			style the element monkey in css and when I use an element monkey it has a style and purpose I defined for it.-->
 			
 			<b>Miss Eileen Dover</b><br />
       		4321 Cliff Top Edge<br />
@@ -40,7 +41,9 @@ in this case the author name-->
 		<p>
 			Dear Eileen,
 	  
-			Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your <abbr title="Doctor of Philosophy">PhD</abbr> next year. 
+			Thank you for your recent application to join us at the University of Awesome's science faculty to study as part of your <abbr title="Doctor of Philosophy">PhD</abbr> next year.  <!-- 
+			Abbr is an abbreviation element, its actually useless idk why its required for this
+			you basically implement a title="(insert full length or full acronym here)"-->
 		</p>
 		
 		<h2>Starting dates</h2>
@@ -50,7 +53,7 @@ in this case the author name-->
 		  however it would suit us better if you could start at the beginning of a semester; the start dates for each one are as follows:
 		</p>
 	
-		<ul> 
+		<ul> <!-- Unordered List, somewhat important but not really when you get into heavy css looking websites (the good looking ones)-->
 		  <li>First semester: 9 September 2016</li> 
 		  <li>Second semester: 15 January 2017</li>
 		  <li>Third semester: 2 May 2017</li>
@@ -71,12 +74,12 @@ in this case the author name-->
 		  You seem like an intelligent, dedicated researcher, and just the kind of person we'd like to have on our team. 
 		  Saying that, of the ideas you submitted we were most intrigued by are as follows, in order of priority:
 		</p>
-		<ol> 
+		<ol> <!-- Ordered List block, this block rather than being a bullet list is a numbered list, a list element is still <li>-->
 		  <li>Turning H<sub>2</sub>O into wine, and the health benefits of Resveratrol (C<sub>14</sub>H<sub>12</sub>O<sub>3</sub>.)</li>
 		  <li>Measuring the effect on performance of funk bassplayers at temperatures exceeding 30°C (86°F), when the audience size exponentially increases 
 			(effect of 3 × 10<sup>3</sup> increasing to 3 × 10<sup>4</sup>.)</li>
 		  <li><abbr title="Hypertext Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> constructs for representing musical scores.</li>
-		</ol> 
+		</ol> <!-- the <sub> and <sup> brackets are subscript and superscript respectively, this is how you get a small text below or above normal-->
 		<p>
 		  So please can you provide more information on each of these subjects, including how long you'd expect the research to take, 
 		  required staff and other resources, and anything else you think we'd need to know? Thanks.
@@ -87,7 +90,8 @@ in this case the author name-->
 		<h2>Exotic dance moves</h2>
 		<p>
 		  Yes, you are right! As part of my post-doctorate work, I did study exotic tribal dances. To answer your question, my favourite dances are as follows, with definitions:
-		  <dl> 
+		  <dl> <!-- This is a different list type, this kind consists of a title then an indented paragraph as you see on the site, 
+			dt is the title which is unindented while dd is the indented text bracket following.-->
 			<dt>Polynesian chicken dance</dt>
 			<dd>A little known but very influential dance dating back as far as 300<abbr title="Before Christ">BC</abbr>, a whole village would dance around in a circle like chickens, to encourage their livestock to be "fruitful".</dd>
 			<dt>Icelandic brownian shuffle</dt>
